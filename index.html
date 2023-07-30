@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing Piano</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="icon.jpg">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>Play Your PIANO</h1>
+            <div class="volumeSlider">
+                <label for="volumeSlide"><h3>Volume</h3></label>
+                <input id="volumeSlide" type="range" min="0" max="1" step="any" value="0.5">
+            </div>
+            <div class="showkeysContainer">
+                <label for="showkeys"><h3>Show Keys</h3></label>
+                <input type="checkbox" id="showKeys" checked>
+            </div>
+        </div>
+        <div class="keys">
+            <button class="a white C4" type="button"><span>A</span></button>
+            <button class="w black Db4" type="button"><span>W</span></button>
+            <button class="s white D4" type="button"><span>S</span></button>
+            <button class="e black Eb4" type="button"><span>E</span></button>
+            <button class="d white E4" type="button"><span>D</span></button>
+            <button class="f white F4" type="button"><span>F</span></button>
+            <button class="t black Gb4" type="button"><span>T</span></button>
+            <button class="g white G4" type="button"><span>G</span></button>
+            <button class="y black Ab4" type="button"><span>Y</span></button>
+            <button class="h white A4" type="button"><span>H</span></button>
+            <button class="u black Bb4" type="button"><span>U</span></button>
+            <button class="j white B4" type="button"><span>J</span></button>
+            <button class="k white C5" type="button"><span>K</span></button>
+            <button class="o black Db5" type="button"><span>O</span></button>
+            <button class="l white D5" type="button"><span>L</span></button>
+            <button class="p black Eb5" type="button"><span>P</span></button>
+            <button class="; white E5" type="button"><span>;</span></button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

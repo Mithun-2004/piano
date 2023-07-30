@@ -1,0 +1,102 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+body{
+    background : linear-gradient(to right, #fc5c7d, #6a82fb);
+    min-height : 100vh;
+    width : 100vw;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+.container{
+    background-color : #222;
+    color : white;
+    padding : 2em;
+    border-radius : 1em;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+    gap : 1em;
+}
+.main{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-wrap : wrap;
+    gap : 1.5em;
+}
+.main h1, .main h3{
+    display : inline-block;
+    color : #ddd;
+}
+.main div{
+    display : inline-block;
+    margin : 1em;
+}
+.keys button{
+    cursor : pointer;
+    border : none;
+    border-radius : 0 0 7px 7px;
+}
+.white{
+    height : 200px;
+    width : 50px;
+    background : linear-gradient(#fff 96%, #eee 4%);
+}
+.black{
+    height : 150px;
+    width : 30px;
+    transform : translateX(-15px);
+    background : linear-gradient(#333 96%, #000 4%);
+    color : white;
+    position : absolute;  
+}
+.whitePressed{
+    box-shadow : inset -5px 5px 20px rgba(0,0,0,0);
+    background : linear-gradient(to bottom, #fff 0%, #eee 100%);
+}
+.blackPressed{
+    box-shadow : inset -5px 5px 20px #000;
+    background : linear-gradient(to bottom #333 0%, #000 100%);
+}
+button span{
+    position : relative;
+    bottom : -40%;
+}
+.white span{
+    color : grey;
+}
+.black span{
+    color : whitesmoke;
+}
+.hideKeys{
+    display : none;
+}
+
+@media screen and ((width < 600px) and (width >= 500px)){
+    .Db5, .D5, .Eb5, .E5{
+        display : none;
+    }
+    .container{
+        padding : 1em;
+    }
+}
+
+@media screen and (width < 500px){
+    .Db5, .D5, .Eb5, .E5{
+        display : none;
+    }
+    .container{
+        padding : 1em;
+    }
+    .white{
+        width : 40px;
+    }
+    .black{
+        width : 25px;
+    }
+}
